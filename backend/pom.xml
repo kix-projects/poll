@@ -27,7 +27,7 @@
 		<!-- Miscellaneous Dependencies -->
 		<jackson.version>2.4.0</jackson.version>
 		<log4j.version>1.2.17</log4j.version>
-		<docker.image.name>poll</docker.image.name>
+		<docker.image.name>poll-backend</docker.image.name>
 	</properties>
 
 	<dependencies>

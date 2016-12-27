@@ -1,1 +1,15 @@
+version: '2'
+services:
+  mongo:
+    image: mongo
+    ports: 
+      - "27047:27017"
+  poll-backend:
+    image: poll-backend
+    depends_on:
+      - mongo
+    links:
+      - mongo
+    ports:
+      - "8080:8080"
 

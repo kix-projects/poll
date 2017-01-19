@@ -1,3 +1,4 @@
+/*
 package kz.poll.config;
 
 import org.springframework.context.annotation.Bean;
@@ -30,4 +31,4 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
 
         configurer.setUseSuffixPatternMatch(false);
     }
-}
+}*/

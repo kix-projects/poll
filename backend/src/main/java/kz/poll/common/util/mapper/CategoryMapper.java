@@ -5,9 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.sab.sampleqa.common.util.mapper.user.UserMapper;
-import org.sab.sampleqa.data.model.qa.Tag;
-import org.sab.sampleqa.web.model.qa.TagUI;
+
+import kz.poll.data.dto.TagUI;
+import kz.poll.data.model.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

@@ -1,3 +1,4 @@
+<!--
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" 
        	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -9,7 +10,7 @@
 			http://www.springframework.org/schema/aop 
 			http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
 
-	<!-- For parsing classes with @Aspect annotation -->
+	&lt;!&ndash; For parsing classes with @Aspect annotation &ndash;&gt;
 	<aop:aspectj-autoproxy/>
 
 	<bean id="customizableTraceInterceptor" class="kz.poll.common.aop.TraceInterceptor"
@@ -21,4 +22,4 @@
 	  <aop:advisor advice-ref="customizableTraceInterceptor" pointcut="execution(public * kz.poll.controller..*(..))"/>
 	</aop:config>
 
-</beans>
+</beans>-->

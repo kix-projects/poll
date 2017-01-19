@@ -13,6 +13,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.SystemEnvironmentPropertySource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -40,7 +41,7 @@ public class PollController {
 	public String getStartPage() {
 		return "poll/list";
 	}
-	
+
 	@RequestMapping(value = "/list")
 	public String list(@RequestParam(required = false) String page,
 			@RequestParam(required = false) String pageSize, Model model) {
@@ -61,6 +62,12 @@ public class PollController {
 				+ " polls: " + polls.getContent());
 
 		return listAction;
+	}
+
+	@RequestMapping(value = "/all")
+	public ResponseEntity<String> getPolls() {
+		logger.debug("Hello world");
+		return ResponseEntity.ok("hello");
 	}
 
 	@RequestMapping(value = "/view/{id}")
